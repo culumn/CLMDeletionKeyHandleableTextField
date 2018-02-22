@@ -3,4 +3,4 @@ matrix:
   include:
     - osx_image: xcode9.2
 script:
-  - xcodebuild test -workspace Example.xcworkspace -scheme CLMDeletionKeyHandleableTextField -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8" | xcpretty -c
+  - xcodebuild clean test -workspace Example.xcworkspace -scheme CLMDeletionKeyHandleableTextField -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8" | xcpretty -c
