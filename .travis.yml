@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode9.2
 before_install:
 - brew update
-- brew install carthage
+- brew upgrade carthage
 script:
   - xcodebuild clean test -workspace Example.xcworkspace -scheme CLMDeletionKeyHandleableTextField -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8" | xcpretty -c
   - carthage build --no-skip-current
